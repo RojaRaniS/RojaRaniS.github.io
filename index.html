@@ -1,322 +1,65 @@
-<htmL>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Estimate the Crop Yield using Data Analytics</title>
-    <meta charset="utf-6">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<style>
-    .pop-up-container {
-        z-index: 1;
-        top: 0;
-        left: 0;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        display: none;
-    }
-
-    .pop-up {
-        background-color: rgb(255, 255, 255);
-        width: 80%;
-        height: 95%;
-        margin: 1% 0 0 10%;
-    }
-
-    .i-frame-style {
-        width: 100%;
-        height: 100%;
-    }
-
-    .close-btn {
-        z-index: 7;
-        top: 590px;
-        left: 650px;
-        position: fixed;
-        height: 30px;
-        width: 120px;
-        margin: 5px 5px 0 0;
-    }
-
-    .button-pop-up{
-        width:96%;
-        margin-left:30px;
-    }
-</style>
-<style>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
     body{
-        margin: 0;
-        background-image: url('(1).jpg');
-        background-repeat:no-repeat;
-        background-size: cover;
-        background-attachment:fixed;
-    }
-    .first-line, .second-line{
-        font-size:600% ;
-        text-align: center;
+		background-size: cover;
+	}
+	h2{
+		font-size:40px;
+		color:white;
+	}
+	div.mt-3{
+		font-size:20px;
+	}
+	p{
+		font-size:25px;
+		color:white;
+	}
+	.login{
+        margin: 0 0 0 25%;
         color: white;
-        font-family:Georgia, 'Times New Roman', Times, serif;
+        height: 30px;
+        font-size:40 !important;
+    }
+    .color{
+        color:white;
         text-shadow: 4px 4px 4px #000000;
     }
-    .left-box{
-        height:450px; 
-        width:100%;
-        background-color:white;
-        margin:90px 0 0 25px;
-        opacity: 0.5;
-        font-weight: 50px;
-    }
-    .links {
-        height: 20%;
-        padding: 0% 0 0 5%;
-        font-size: xx-large;
-    }
-    .linkStyles {
-        color: black;
-        text-decoration: none;
-        height: 70px;
-    }
-    .dash-story-container{
-        width: 100%;height:100px;margin:90px 0 0 80px;
-    }
-    .button {
-        width: 350px;
-        height: 50px;
-        border-radius: 6px;
-        opacity: 0.5;
-        display: block;
-        margin-bottom:5px
-    }
-
-    .button-link{
-        font-size: 30;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-    .paragraph{
-        width:80%;
-        height:750px;
-        margin:60px 100px;
-        color: #ffffff ;
-        font-size: 24px;
-    }
-    .five-points{
-        color: #ffffff;
-        width:80%;
-        height:380px;
-        margin:1% 0 0 4%;
-        color: #ffffff ;
-        font-size: 24px;
-    }
-    .textbox{
-        margin: 20px 20px 0 20px;
-        text-indent: 40px;
-        text-align: justify;
-        line-height: 1.2;
-    }
-    .graph{
-        width:40%;
-        height:100%;
-        border-radius:5px;
-        margin-left: 6%;
-    }
-    .graph-row
-    {
-        height:400px;
-        width:100%;
-        display: flex;
-        margin-bottom: 3%;
-    }
-    .graph-img{
-        height:90%;
-        width:100%;
-    }
-    .proj-id
-    {
-        height: 50px;
-        width:80%;
-        font-size: 70;
-        color: white;
-        margin:5% 0 0 8%;
-    }
-    .proj-name
-    {
-        height: 30px;
-        width:70%;
-        font-size: 50;
-        color: white;
-        margin:2% 0 0 15%;
-    }
-    .team-container{
-        height: 200px;
-        width: 400px;
-        color: white;
-        margin: 5% 0 0 6% ;
-        font-size: 30;
-    }
-    .team-member{
-        font-weight: 50%;
-    }
-</style>
-
-<body>
-    <div id="home" style="z-index: -1;" class="container">
-        <div class="first-line" style="padding-top:100px ;">ESTIMATION OF CROP YIELD</div>
-        <div class="second-line">ANALYSIS OF INDIA</div>
-        <div>
-
-            <div style="display: flex;width:100%;height: 780px;">
-                <div style="width: 33%;">
-                    <div class="left-box">
-                        <div class="links" style="height: 17%;padding: 8% 0 3% 5%;">
-                            <a class="linkStyles" onclick="document.getElementById('pop-up-box1').style.display='block'"
-                                href="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&pathRef=.my_folders%2FSeasons%2BWith%2BAverage%2BProductions&action=view&mode=dashboard&subView=model000001847fecc8be_00000000 "
-                                target="i-frame-1">Seasons with average production</a>
+  </style>
+</head>
+<body background="main.jpg">
+	<br><br>
+    
+    <h2 style="text-align: center;margin-top: 2%; text-shadow: 4px 4px 4px #000000;">LOGIN</h2>
+        <form>
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="mb-3 mt-3 p-5 text-dark" >
+                        <div class='mt-3'>
+                            <label for="username" class="form-label color">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter your username" autocomplete="off" required>
                         </div>
-                        <div class="links">
-                            <a class="linkStyles" onclick="document.getElementById('pop-up-box2').style.display='block'"
-                                href="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&pathRef=.my_folders%2FWith%2BYears%2BUsage%2BOf%2BArea%2BAnd%2BProduction&action=view&mode=dashboard&subView=model000001847ffe2b5a_00000000 "
-                                target="i-frame=-2">With years usage of area and production</a>
+                        <div class="mt-3" >
+                            <label for="password" class="form-label color" required>Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
                         </div>
-                        <div class="links" style="height: 13%;">
-                            <a class="linkStyles" onclick="document.getElementById('pop-up-box3').style.display='block'"
-                                href="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&pathRef=.my_folders%2FTop%2B10%2BStates%2BWith%2BMost%2BArea&action=view&mode=dashboard&subView=model000001847ffe8ee1_00000000 "
-                                target="i-frame-3">Top 10 states with most area</a>
+                        <div>    
+                            <br>
+                            <button type="button" onclick="login()" class="btn btn-primary">Submit</button>&nbsp;
+                            <input type="reset" class="btn btn-primary">
                         </div>
-                        <div class="links" style="height: 13%;">
-                            <a class="linkStyles" onclick="document.getElementById('pop-up-box4').style.display='block'"
-                                href="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&pathRef=.my_folders%2FState%2BWith%2BCrop%2BProduction&action=view&mode=dashboard&subView=model000001847ffeb5c8_00000000 "
-                                target="i-frame-4">States with crop production</a>
-                        </div>
-                        <div class="links">
-                            <a class="linkStyles" onclick="document.getElementById('pop-up-box5').style.display='block'"
-                                href="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&pathRef=.my_folders%2FStates%2BWith%2BThe%2BCrop%2BProduction%2BAlong%2BWith%2BSeason&action=view&mode=dashboard&subView=model000001847ffed251_00000000 "
-                                target="i-frame-5">States with the crop production along with seasons</a>
-                        </div>
-                    </div>
-                    <div class="dash-story-container">
-                        <button class="button"> <a class="linkStyles button-link" onclick="document.getElementById('pop-up-box6').style.display='block'"
-                                href="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&pathRef=.my_folders%2FDashboard.&action=view&mode=dashboard&subView=model0000018480297581_00000000"
-                                target="i-frame-6">DASHBOARD</a></button>
-                        <button class="button"> <a class="linkStyles button-link"
-                                onclick="document.getElementById('pop-up-box7').style.display='block'" 
-                                href=""
-                                target="i-frame-7">STORY</a>
-                        </button>
-                    </div>
-                </div>
-                <div style="width: 70%;">
-                    <div class="paragraph">
-                        <div class="textbox">Today, India ranks second worldwide in the farm output.Because, agriculture is the backbone of Indian Economy. In India, majority of the farmers are not getting the expected crop yield due to several reasons. Agriculture is demographically the broadest economic sector and plays a significant role in the overall socio-economic fabric of India. Agriculture is a unique business crop production which is dependent on many climate and economy factors. Some of the factors on which agriculture is dependent are soil, climate, cultivation, irrigation, fertilizers, temperature, rainfall, harvesting, pesticide weeds and other factors. 
-                             </div>
-                            <div class="textbox">Historical crop yield information is also important for supply chain operation of companies engaged in industries. In agriculture sector where farmers and agribusinesses have to make innumerable decisions every day and intricate complexities involves the various factors influencing them. An essential issue for agricultural planning intention is the accurate yield estimation for the numerous crops involved in the planning.
-                            </div>
-                            <div class="textbox">In this context, the farmers necessarily requires a  analysis in order to help the farmers to maximize the crop production in their crops. Yield prediction is an important agricultural problem. Every farmer is interested in knowing, how much yield he is about expect. In the past, yield prediction was performed by considering farmer's previous experience on a particular crop. The volume of datais enormous in Indian agriculture. The data when become information is highly useful for many purposes. 
-                            </div>
-                    </div>
+						<br>
+                        <p>New user?&nbsp;<a href="Registration.html" style="color:white">Register</a></p>
+						
                 </div>
             </div>
-            
-            <div class="five-points">
-                <div class="textbox">Thus we using the Crop production in Indian dataset, we plan to create various graphs and charts to highlight the insights and visualizations.</div>  
-                <div class="textbox" >* Build a Visualizaiton to showcase Average Crop Production by Seasons.</div>
-                <div class="textbox" >* Showcase the Yearly usage of Area in Crop Production.</div>
-                <div class="textbox" >* Build a visualization to show case top 10 States in Crop Yeild Production by Area.</div>
-                <div class="textbox">* Build the required Visualization to showcase the Crop Production by State.</div>
-                <div class="textbox" style="margin-bottom:10px">* Build Viusal analytics to represent the Sates with Seasonsal Crop Production using a Text representation.</div>
-            </div>
-
-        </div>
-
-        <div style="width:100%">
-            <div class="graph-row">
-                <div class="graph">
-                    <img src="graph1.jpg" class="graph-img">
-                    <div style="height: 20px;color: white;margin:3% 0 5% 30%;">Season with average production</div>
-                </div>
-                <div class="graph">
-                    <img src="graph2.jpg" class="graph-img">
-                    <div style="height: 20px;color: white;margin:3% 0 5% 30%;">With years usage of area and production</div>
-                </div>
-            </div>
-            <div class="graph-row">
-                <div class="graph">
-                    <img src="graph3.jpg" class="graph-img">
-                    <div style="height: 20px;color: white;margin:3% 0 5% 30%;">Season with average production</div>
-                </div>
-                <div class="graph">
-                    <img src="graph4.jpg" class="graph-img">
-                    <div style="height: 20px;color: white;margin:3% 0 5% 30%;">With years usage of area and production</div>
-                </div>
-            </div>
-            <div class="graph-row" style="height:370px">
-                <div class="graph" style="margin-left: 20%;width:60%">
-                    <img src="graph5.jpg" style="width:100%;height:100%">
-                    <div style="height: 20px;color: white;margin:3% 0 5% 30%;">Season with average production</div>
-                </div>
-            </div>
-        </div>
-        <div class="proj-id">IBM-Project - PNT2022TMID20578 </div>
-        <div class="proj-name"> Estimate the Crop Yield using Data Analytics</div>
-        <div class="team-container">
-            <div class="team-title"><b><u>TEAM MEMBERS</u></b></div>
-            <div>Keerthana B</div>
-            <div>Monika S</div>
-            <div>Pavithra J</div>
-            <div>Roja Rani S</div>
-        </div>
+        </form>
     </div>
-
-    <div id="pop-up-box1" class="pop-up-container">
-        <div class="pop-up">
-            <iframe name="i-frame-1" class="i-frame-style"></iframe>
-            <button class="close-btn"
-                onclick="document.getElementById('pop-up-box1').style.display='none'">Close</button>
-        </div>
     </div>
-    <div id="pop-up-box2" class="pop-up-container">
-        <div class="pop-up">
-            <iframe name="i-frame-2" class="i-frame-style"></iframe>
-            <button class="close-btn"
-                onclick="document.getElementById('pop-up-box2').style.display='none'">Close</button>
-        </div>
-    </div>
-    <div id="pop-up-box3" class="pop-up-container">
-        <div class="pop-up">
-            <iframe name="i-frame-3" class="i-frame-style"></iframe>
-            <button class="close-btn"
-                onclick="document.getElementById('pop-up-box3').style.display='none'">Close</button>
-        </div>
-    </div>
-    <div id="pop-up-box4" class="pop-up-container">
-        <div class="pop-up">
-            <iframe name="i-frame-4" class="i-frame-style"></iframe>
-            <button class="close-btn"
-                onclick="document.getElementById('pop-up-box4').style.display='none'">Close</button>
-        </div>
-    </div>
-    <div id="pop-up-box5" class="pop-up-container">
-        <div class="pop-up">
-            <iframe name="i-frame-5" class="i-frame-style"></iframe>
-            <button class="close-btn"
-                onclick="document.getElementById('pop-up-box5').style.display='none'">Close</button>
-        </div>
-    </div>
-    <div id="pop-up-box6" class="pop-up-container">
-        <div class="pop-up button-pop-up">
-            <iframe name="i-frame-6" class="i-frame-style"></iframe>
-            <button class="close-btn"
-                onclick="document.getElementById('pop-up-box6').style.display='none'">Close</button>
-        </div>
-    </div>
-    <div id="pop-up-box7" class="pop-up-container">
-        <div class="pop-up button-pop-up">
-            <iframe name="i-frame-7" class="i-frame-style"></iframe>
-            <button class="close-btn"
-                onclick="document.getElementById('pop-up-box7').style.display='none'">Close</button>
-        </div>
-    </div>
-
+    <script src="loginscript.js"></script>
 </body>
-
-</html>
